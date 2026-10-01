@@ -1,6 +1,11 @@
 # claude-merge-verify
 커밋 전 merge 충돌 해결 결과를 3-way diff로 검증하는 Claude Code 스킬 — 코드 누락·중복 반영·논리적 충돌을 잡아냅니다.
 
+---
+name: merge-verify
+description: '다른 브랜치(예: release)를 현재 브랜치로 머지하다가 충돌이 나서 해결한 뒤, 아직 커밋하기 전 상태에서 그 충돌 해결이 올바른지(코드 누락/중복/논리적 충돌 없는지) 검증한다. 커밋 이후 상태나 원격 push 가능 여부 체크에는 쓰지 않는다. "머지 충돌 확인해줘", "충돌 해결 검증", "누락된 거 없는지 체크" 같은 요청에 사용한다.'
+---
+
 # merge-verify
 
 Claude Code 스킬 — git merge 충돌을 수동으로 해결한 뒤, 커밋하기 전 그 해결 결과가
